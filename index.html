@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+    }
+    html,
+    body{
+      height: 100%;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    img{
+      width: 100px;
+    }    
+    .container{
+      width: 100%;
+      margin:auto;
+    }
+    .text-left {
+      text-align: left;
+    }
+    .roc{
+      justify-content: center;
+      flex-direction:column;
+      align-items: center;
+      display: flex;
+    }
+    .html{
+      justify-content: center;
+      flex-direction:column;
+      align-items: center;
+      display: flex;
+    }
+    .css3{
+      justify-content: center;
+      flex-direction:column;
+      align-items: center;
+      display: flex;
+    }
+    .bootstrap{
+      justify-content: center;
+      flex-direction:column;
+      align-items: center;
+      display: flex;
+    }
+    .js{
+      justify-content: center;
+      flex-direction:column;
+      align-items: center;
+      display: flex;
+    }
+    .jq{
+      justify-content: center;
+      flex-direction:column;
+      align-items: center;
+      display: flex;
+    }
+    .vue{
+      justify-content: center;
+      flex-direction:column;
+      align-items: center;
+      display: flex;
+    }
+    .sass{
+      justify-content: center;
+      flex-direction:column;
+      align-items: center;
+      display: flex;
+    }
+    .roc_p1,.roc_p2{
+      width: 100%;
+      text-align: center;
+    }
+    @media (min-width: 1200px) {
+      p{
+        font-size:0;
+      }
+      hr{
+        display:none;
+      }
+      .container{
+        max-width: 100vw;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+      img{
+        width: 150px;
+      }
+      .box{
+        position: relative;
+      }    
+      .roc{
+        /* justify-content: center;
+        flex-direction:column;
+        align-items: center;
+        display: flex; */
+        transform: translate(830px,0px);
+        height: 100vh;
+        position: absolute;
+      }
+      .roc img{
+        width: 200px;
+      }
+      .html{
+        position: absolute;
+        top:0;
+        transform: translate(300px,100px);
+      }
+      .html::before{
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 410px;
+        left: 340px;
+        top:10px;
+        background: #aaa;
+        transform: rotate(-70deg);
+      }
+      .css3{
+        position: absolute;
+        top:0;
+        transform: translate(600px,50px);
+      }
+      .css3::before{
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 150px;
+        left: 200px;
+        top:140px;
+        background: #aaa;
+        transform: rotate(-50deg);
+      }
+      .bootstrap{
+        position: absolute;
+        top:0;
+        transform: translate(1150px,50px);
+      }
+      .bootstrap::before{
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 180px;
+        left: -50px;
+        top:120px;
+        background: #aaa;
+        transform: rotate(-135deg);
+      }
+      .js{
+        position: absolute;
+        top:0;
+        transform: translate(400px,380px);
+      }
+      .js::before{
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 300px;
+        left: 280px;
+        top:-80px;
+        background: #aaa;
+        transform: rotate(85deg);
+      }
+      .jq{
+        position: absolute;
+        top:0;
+        transform: translate(580px,550px);
+      }
+      .jq::before{
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 180px;
+        left: 200px;
+        top:-100px;
+        background: #aaa;
+        transform: rotate(-130deg);
+      }
+      .vue{
+        position: absolute;
+        top:0;
+        transform: translate(1250px,460px);
+      }
+      .vue::before{
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 170px;
+        left: -100px;
+        top:-50px;
+        background: #aaa;
+        transform: rotate(-70deg);
+      }
+      .sass{
+        position: absolute;
+        top:0;
+        transform: translate(1470px,250px);
+      }
+      .sass::before{
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 370px;
+        left: -188px;
+        top:-60px;
+        background: #aaa;
+        transform: rotate(83deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="roc">
+        <img src="images/ROC.png" alt="">
+        <h2>泰山職訓局</h2>
+        <h2>從零開始的網頁設計課程</h2>
+        <div class="roc_p1">
+          <span>轉職網頁開發人員</span>
+           &nbsp;
+          <span>掌握就業必備職能</span>
+        </div>
+        <div class="roc_p2">
+          <span>由淺入深學習技術</span>
+           &nbsp;
+          <span>強化職場的競爭力</span>
+        </div>        
+      </div>
+      <hr>
+      <div class="html">
+        <img src="./images/html5.png" alt="">
+        <div class="text-left">
+          <h3>Html</h3>
+          <p>超文本標記語⾔（英語：HyperText Markup Language，簡稱：HTML）是⼀種⽤於建立網⾴的標準標記語⾔。
+          HTML 是⼀種基礎技術，常與 CSS、JavaScript ⼀起被眾多網站⽤於設計賞⼼悅⽬的網⾴、網⾴應⽤程式以及⾏
+          動應⽤程式的使⽤者介⾯。網⾴瀏覽器可以讀取 HTML 檔案，並將其彩現成視覺化網⾴。HTML 描述了⼀個網站
+          的結構語意隨著線索的呈現，使之成為⼀種標記語⾔⽽非程式語⾔。</p>
+        </div>
+      </div>
+      <hr>
+      <div class="css3">
+        <img src="./images/css.png" alt="">
+        <div class="text-left">
+          <h3>CSS3</h3>
+          <p>層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），⼜稱串樣式列表、級聯樣式表、串接樣式表、階層式樣
+             式表，⼀種⽤來為結構化文件（如 HTML 文件或 XML 應⽤）添加樣式（字型、間距和顏⾊等）的電腦語⾔，由
+             W3C 定義和維護。⽬前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被⼤部分現代瀏覽器⽀援，⽽下
+             ⼀版的 CSS4 仍在開發中。</p>
+        </div>
+      </div>
+      <hr>
+      <div class="bootstrap">
+        <img src="./images/bootstrap.png" alt="">
+        <div class="text-left">
+          <h3>Bootstrap</h3>
+          <p>Bootstrap 是⼀組⽤於網站和網路應⽤程式開發的開源前端（所謂「前端」，指的是展現給終端使⽤者的介⾯。與
+             之對應的「後端」是在伺服器上⾯執⾏的程式碼）框架，包括 HTML、CSS及JavaScript 的框架，提供字體排印、
+             表單、按鈕、導航及其他各種元件及 Javascript 擴充套件，旨在使動態網⾴和 Web 應⽤的開發更加容易。</p>
+        </div>
+      </div>
+      <hr>
+      <div class="js">
+        <img src="./images/js.png" alt="">
+        <div class="text-left">
+          <h3>JavaScript</h3>
+          <p>JavaScript，通常縮寫為 JS，是⼀種進階直譯語⾔的程式語⾔。JavaScript 是⼀⾨基於原型、函式先⾏的語⾔，是
+             ⼀⾨多範式的語⾔，它⽀援物件導向編程，指令式程式設計，以及函式語⾔程式設計。</p>
+        </div>
+      </div>
+      <hr>
+      <div class="jq">
+        <img src="./images/jquery.png" alt="">
+        <div class="text-left">
+          <h3>jQuery</h3>
+          <p>jQuery 是⼀套跨瀏覽器的 JavaScript 函式庫，簡化 HTML 與 JavaScript 之間的操作。全球前 10,000 個存取最⾼的
+             網站中，有 65% 使⽤了jQuery，是⽬前最受歡迎的 JavaScript 函式庫。</p>
+        </div>
+      </div>
+      <hr>
+      <div class="vue">
+        <img src="./images/vue.png" alt="">
+        <div class="text-left">
+          <h3>Vue.js</h3>
+          <p>Vue.js（/vjuː/，或簡稱為Vue）是一個用於建立使用者介面的開源JavaScript框架，也是一個建立單頁應用的Web應用框架。
+             2016年一項針對JavaScript的調查表明，Vue有著89%的開發者滿意度。在GitHub上，該專案平均每天能收穫95顆星，為Github有史以來星標數第3多的專案。</p>
+        </div>
+      </div>
+      <hr>
+      <div class="sass">
+        <img src="./images/sass.png" alt="">
+        <div class="text-left">
+          <h3>Sass</h3>
+          <p>Sass（英文全稱：Syntactically Awesome Stylesheets）是一個將指令碼解析成CSS的手稿語言，即SassScript。Sass包括兩套語法。最開始的語法叫做「縮排語法」
+            ，與Haml類似，使用縮排來區分代碼塊，並且用換行將不同規則分隔開。而較新的語法叫做「SCSS」，使用和CSS一樣的塊語法，即使用大括號將不同的規則分開
+            ，使用分號將具體的樣式分開。通常情況下，這兩套語法通過.sass和.scss兩個副檔名區分開。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
